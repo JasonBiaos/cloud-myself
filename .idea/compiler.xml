@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hhsoft-api-model" />
+        <module name="hhsoft-commons" />
+        <module name="hhsoft-config-center" />
+        <module name="hhsoft-eureka-center" />
+        <module name="hhsoft-file-center" />
+        <module name="hhsoft-gateway-zuul" />
+        <module name="hhsoft-log-center" />
+        <module name="hhsoft-log-starter" />
+        <module name="hhsoft-manage-backend" />
+        <module name="hhsoft-monitor-center" />
+        <module name="hhsoft-notification-center" />
+        <module name="hhsoft-oauth2-center" />
+        <module name="hhsoft-user-center" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hhsoft-api-model" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hhsoft-api-model" options="-parameters" />
+      <module name="hhsoft-commons" options="-parameters" />
+      <module name="hhsoft-config-center" options="-parameters" />
+      <module name="hhsoft-eureka-center" options="-parameters" />
+      <module name="hhsoft-file-center" options="-parameters" />
+      <module name="hhsoft-gateway-zuul" options="-parameters" />
+      <module name="hhsoft-log-center" options="-parameters" />
+      <module name="hhsoft-log-starter" options="-parameters" />
+      <module name="hhsoft-manage-backend" options="-parameters" />
+      <module name="hhsoft-monitor-center" options="-parameters" />
+      <module name="hhsoft-notification-center" options="-parameters" />
+      <module name="hhsoft-oauth2-center" options="-parameters" />
+      <module name="hhsoft-user-center" options="-parameters" />
+    </option>
+  </component>
+</project>
