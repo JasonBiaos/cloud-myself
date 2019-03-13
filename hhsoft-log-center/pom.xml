@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hhsoft-log-center</artifactId>
-
+    <name>hhsoft-log-center</name>
+    <description>日志中心</description>
+    <packaging>jar</packaging>
 
 </project>
