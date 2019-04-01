@@ -56,6 +56,13 @@
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
         </dependency>
+
+        <!--数据传输对象、常量、实体类依赖-->
+        <dependency>
+            <groupId>com.hhsoft.cloud</groupId>
+            <artifactId>hhsoft-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
