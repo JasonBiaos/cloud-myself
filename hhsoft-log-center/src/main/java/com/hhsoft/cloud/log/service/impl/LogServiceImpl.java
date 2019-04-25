@@ -1,10 +1,11 @@
 package com.hhsoft.cloud.log.service.impl;
 
+import com.hhsoft.cloud.commons.utils.page.PageUtil;
 import com.hhsoft.cloud.log.dao.LogDao;
 import com.hhsoft.cloud.log.service.LogService;
+import com.hhsoft.cloud.model.common.Page;
 import com.hhsoft.cloud.model.log.Log;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -51,8 +52,12 @@ public class LogServiceImpl implements LogService {
         int total = logDao.count(params);
         List<Log> list = Collections.emptyList();
         if (total > 0){
+            //校验分页参数
+            PageUtil.pageParamConver(params,true);
 
+            //分页查询日志集合
+            list = logDao.findData(params);
         }
-        return null;
+        return new Page<>(total,list);
     }
 }

@@ -71,10 +71,16 @@
             <artifactId>transport</artifactId>
         </dependency>
 
-        <!---->
+        <!--链路集成-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hhsoft.cloud</groupId>
+            <artifactId>hhsoft-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

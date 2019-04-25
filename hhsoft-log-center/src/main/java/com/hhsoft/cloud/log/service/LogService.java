@@ -1,7 +1,7 @@
 package com.hhsoft.cloud.log.service;
 
+import com.hhsoft.cloud.model.common.Page;
 import com.hhsoft.cloud.model.log.Log;
-import org.springframework.data.domain.Page;
 
 import java.util.Map;
 
